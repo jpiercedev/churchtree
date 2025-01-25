@@ -1,14 +1,4 @@
-"use client";
-
-import { useRouter } from "next/navigation";
-
 export default function Home() {
-  const router = useRouter();
-
-  const handleGetStarted = () => {
-    router.push("/signup"); // Navigate to the signup page
-  };
-
   return (
     <div className="min-h-screen bg-base-200">
       <div className="hero py-12 bg-base-100 shadow-lg">
@@ -23,9 +13,7 @@ export default function Home() {
               Create a professional landing page for your church, manage links,
               and track analytics effortlessly.
             </p>
-            <button className="btn btn-primary" onClick={handleGetStarted}>
-              Get Started
-            </button>
+            <button className="btn btn-primary">Get Started</button>
           </div>
         </div>
       </div>
